@@ -1,0 +1,117 @@
+# Copyright (C) 2018 Select Twitter Feed
+# This file is distributed under the same license as the Select Twitter Feed package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Select Twitter Feed 1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/select-twitter-feed\n"
+"POT-Creation-Date: 2018-03-15 11:48:15+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2018-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: lib/qodef-twitter-api.php:232 lib/qodef-twitter-api.php:299
+#: lib/qodef-twitter-api.php:363
+msgid "Internal WP error"
+msgstr ""
+
+#: lib/qodef-twitter-api.php:248
+msgid "Redirect URL couldn\\t not be generated"
+msgstr ""
+
+#: lib/qodef-twitter-api.php:255
+msgid "Couldn't connect with Twitter API"
+msgstr ""
+
+#: lib/qodef-twitter-api.php:311
+msgid "Access token obtained"
+msgstr ""
+
+#: lib/qodef-twitter-api.php:316
+msgid "Authorize token and it's secret were not obtainer"
+msgstr ""
+
+#: lib/qodef-twitter-api.php:373
+msgid "Couldn't connect with Twitter"
+msgstr ""
+
+#: lib/qodef-twitter-api.php:378
+msgid "It seams like you haven\\t connected with your Twitter account"
+msgstr ""
+
+#: lib/qodef-twitter-api.php:388
+msgid "Couldn't retreive content from database"
+msgstr ""
+
+#: lib/qodef-twitter-helper.php:78
+msgid "ago"
+msgstr ""
+
+#: widgets/qodef-twitter-widget.php:12
+msgid "Select Twitter Widget"
+msgstr ""
+
+#: widgets/qodef-twitter-widget.php:14
+msgid "Display your Twitter feed"
+msgstr ""
+
+#: widgets/qodef-twitter-widget.php:26
+msgid "Title"
+msgstr ""
+
+#: widgets/qodef-twitter-widget.php:31
+msgid "Type"
+msgstr ""
+
+#: widgets/qodef-twitter-widget.php:33
+msgid "Standard"
+msgstr ""
+
+#: widgets/qodef-twitter-widget.php:34
+msgid "Slider"
+msgstr ""
+
+#: widgets/qodef-twitter-widget.php:40
+msgid "User ID"
+msgstr ""
+
+#: widgets/qodef-twitter-widget.php:45
+msgid "Number of Tweets"
+msgstr ""
+
+#: widgets/qodef-twitter-widget.php:50
+msgid "Show Tweet Icon"
+msgstr ""
+
+#: widgets/qodef-twitter-widget.php:52 widgets/qodef-twitter-widget.php:62
+msgid "Yes"
+msgstr ""
+
+#: widgets/qodef-twitter-widget.php:53 widgets/qodef-twitter-widget.php:61
+msgid "No"
+msgstr ""
+
+#: widgets/qodef-twitter-widget.php:59
+msgid "Show Tweet Time"
+msgstr ""
+
+#: widgets/qodef-twitter-widget.php:68
+msgid "Tweets Cache Time"
+msgstr ""
+
+#: widgets/qodef-twitter-widget.php:203
+msgid "It seams that you haven't connected with your Twitter account"
+msgstr ""
+#. Plugin Name of the plugin/theme
+msgid "Select Twitter Feed"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Plugin that adds Twitter feed functionality to our theme"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Select Themes"
+msgstr ""

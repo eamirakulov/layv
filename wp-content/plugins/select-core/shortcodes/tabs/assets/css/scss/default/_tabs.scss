@@ -1,0 +1,173 @@
+/* ==========================================================================
+   Tabs shortcode style - begin
+   ========================================================================== */
+
+.qodef-tabs {
+	@include qodefRelativeHolderLayout();
+
+	.qodef-tabs-nav {
+		@include qodefRelativeHolderLayout();
+		margin: 0;
+		padding: 0;
+		list-style: none;
+        text-align: center;
+
+		li {
+			margin: 0;
+			padding: 0;
+            display: inline-block;
+
+			a {
+				position: relative;
+				display: inline-block;
+				vertical-align: middle;
+				box-sizing: border-box;
+				@include qodefTransition(color .2s ease-out, background-color .2s ease-out, border-color .2s ease-out);
+			}
+		}
+	}
+
+	.qodef-tab-container {
+		@include qodefRelativeHolderLayout();
+		/*visibility: hidden;
+		opacity:0;*/
+		@include qodefTransform(translateY(5px));
+
+		&.qodef-visible {
+			visibility: visible;
+			opacity:1;
+			@include qodefTransform(translateY(0));
+			@include qodefTransition(all .35s cubic-bezier(0.22, 0.61, 0.36, 1));
+		}
+
+		p {
+			margin: 0;
+		}
+	}
+
+	.qodef-tab-description {
+		margin-bottom: 40px;
+		font-size: 17px;
+		line-height: 28px;
+	}
+
+	.qodef-tab-content-holder {
+		display: table;
+
+		.qodef-tab-content {
+			@include qodefTableCellLayout();
+			width: 67%;
+		}
+		.qodef-tab-image {
+			@include qodefTableCellLayout();
+			width: 33%;
+			vertical-align: bottom;
+		}
+	}
+
+	&.qodef-tabs-standard {
+
+		.qodef-tabs-nav {
+			text-align: left;
+			li {
+
+				a {
+					font-family: $default-heading-font;
+					padding: 7px 31px;
+					font-size: 17px;
+					line-height: 41px;
+					font-weight: 700;
+					color: #3c3c3c;
+					background-color: transparent;
+				}
+
+				&.ui-state-active a,
+				&.ui-state-hover a {
+					color: $first-main-color;
+				}
+				
+				&:first-child {
+					a {
+						padding-left: 0;
+					}
+				}
+			}
+		}
+
+		.qodef-tab-container {
+			margin: 0;
+            border-top: 1px solid #ebebeb;
+            padding: 20px 0;
+            text-align: left;
+            box-sizing: border-box;
+		}
+	}
+
+	&.qodef-tabs-vertical {
+		display: table;
+
+		.qodef-tabs-nav {
+			display: table-cell;
+			vertical-align: top;
+			width: 31%;
+			height: 100%;
+			box-sizing: border-box;
+
+			li {
+				display: block;
+				float: none;
+				&:not(:last-child){
+					border-bottom: 1px solid #e5e5e5;
+				}
+
+
+				a {
+					font-family: $default-heading-font;
+					font-size: 14px;
+					line-height: 36px;
+					font-weight: 700;
+					color: #171717;
+					width: 100%;
+					padding: 19px 30px 19px 20px;
+					border-right: 7px solid transparent;
+					background-color: #fff;
+					@include qodefTransition(all 0.25s ease-out);
+					text-align: right;
+				}
+
+				&.ui-state-active,
+				&.ui-state-hover {
+					border: 1px solid #e5e5e5;
+					border-right: 0;
+					&:not(:first-child){
+						border-top: 0;
+					}
+					a {
+						color: $first-main-color;
+						border-right: 7px solid $first-main-color;
+						padding-left: 25px;
+					}
+				}
+
+				&:last-child {
+					margin: 0;
+				}
+			}
+		}
+
+		.qodef-tab-container {
+			display: table-cell;
+			vertical-align: top;
+			width: 100%;
+			height: 100%;
+			padding: 0 0 0 45px;
+			box-sizing: border-box;
+			.qodef-tab-title {
+				margin-top: 0;
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Tabs shortcode style - end
+   ========================================================================== */

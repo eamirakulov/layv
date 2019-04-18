@@ -1,0 +1,6 @@
+1.1
+- Added WooCommerce 3.4.5 compatibility
+- Added compatibility with Gutenberg plugin
+- Added compatibility with PHP 7.2
+- Updated Visual Composer to 5.5.4
+- Updated Timetable to 5.5

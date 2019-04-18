@@ -1,0 +1,204 @@
+/* ==========================================================================
+   Side area styles - begin
+   ========================================================================== */
+/* common mixins - start */
+/* common mixins - end */
+/* mixins styles - start */
+/* mixins styles - end */
+/* ==========================================================================
+# Side area style - begin
+========================================================================== */
+.qodef-light-header .qodef-page-header > div:not(.qodef-sticky-header):not(.fixed) .qodef-side-menu-button-opener,
+.qodef-light-header .qodef-top-bar .qodef-side-menu-button-opener {
+  color: #fff !important;
+}
+
+.qodef-light-header .qodef-page-header > div:not(.qodef-sticky-header):not(.fixed) .qodef-side-menu-button-opener.opened, .qodef-light-header .qodef-page-header > div:not(.qodef-sticky-header):not(.fixed) .qodef-side-menu-button-opener:hover,
+.qodef-light-header .qodef-top-bar .qodef-side-menu-button-opener.opened,
+.qodef-light-header .qodef-top-bar .qodef-side-menu-button-opener:hover {
+  color: #fff !important;
+}
+
+.qodef-dark-header .qodef-page-header > div:not(.qodef-sticky-header):not(.fixed) .qodef-side-menu-button-opener,
+.qodef-dark-header .qodef-top-bar .qodef-side-menu-button-opener {
+  color: #333 !important;
+}
+
+.qodef-dark-header .qodef-page-header > div:not(.qodef-sticky-header):not(.fixed) .qodef-side-menu-button-opener.opened, .qodef-dark-header .qodef-page-header > div:not(.qodef-sticky-header):not(.fixed) .qodef-side-menu-button-opener:hover,
+.qodef-dark-header .qodef-top-bar .qodef-side-menu-button-opener.opened,
+.qodef-dark-header .qodef-top-bar .qodef-side-menu-button-opener:hover {
+  color: rgba(51, 51, 51, 0.8) !important;
+}
+
+.qodef-side-menu-button-opener {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 16px;
+}
+
+.qodef-side-menu-button-opener .qodef-fm-lines {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 15px;
+  height: 20px;
+  text-align: center;
+  color: #3c3c3c;
+}
+
+.qodef-side-menu-button-opener .qodef-fm-lines .qodef-fm-line {
+  position: absolute;
+  height: 4px;
+  border-radius: 50%;
+  width: 4px;
+  background-color: currentColor;
+  -webkit-transition: -webkit-transform 0.3s ease, top 0.2s ease-out, background-color 0.2s ease-out;
+  -moz-transition: -moz-transform 0.3s ease, top 0.2s ease-out, background-color 0.2s ease-out;
+  transition: transform 0.3s ease, top 0.2s ease-out, background-color 0.2s ease-out;
+}
+
+.qodef-side-menu-button-opener .qodef-fm-lines .qodef-fm-line.qodef-line-1 {
+  top: 0;
+  outline: transparent solid 1px;
+}
+
+.qodef-side-menu-button-opener .qodef-fm-lines .qodef-fm-line.qodef-line-2 {
+  top: calc(50% - 2px);
+  outline: transparent solid 1px;
+}
+
+.qodef-side-menu-button-opener .qodef-fm-lines .qodef-fm-line.qodef-line-3 {
+  top: calc(100% - 4px);
+  outline: transparent solid 1px;
+}
+
+.qodef-side-menu-button-opener:hover .qodef-fm-lines .qodef-fm-line.qodef-line-1 {
+  top: -4px;
+}
+
+.qodef-side-menu-button-opener:hover .qodef-fm-lines .qodef-fm-line.qodef-line-2 {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.qodef-side-menu-button-opener:hover .qodef-fm-lines .qodef-fm-line.qodef-line-3 {
+  top: 100%;
+}
+
+.qodef-side-menu-button-opener .qodef-side-menu-title {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 8px 0 0;
+  color: currentColor;
+}
+
+.qodef-side-menu-button-opener .qodef-side-menu-icon {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 20px;
+}
+
+.qodef-side-menu-button-opener .qodef-side-menu-icon span {
+  display: block;
+  line-height: inherit;
+}
+
+.qodef-side-menu-button-opener .qodef-side-menu-icon span:before {
+  display: block;
+  line-height: inherit;
+}
+
+.qodef-side-menu-button-opener.opened, .qodef-side-menu-button-opener:hover {
+  color: #ffbea5;
+}
+
+.qodef-side-menu {
+  position: fixed;
+  top: 0;
+  right: -485px;
+  width: 485px;
+  height: 100%;
+  min-height: 100%;
+  padding: 70px 68px 36px;
+  background-color: #fff;
+  text-align: left;
+  overflow: hidden;
+  visibility: hidden;
+  z-index: 9999;
+  -webkit-backface-visibility: hidden;
+  box-sizing: border-box;
+  box-shadow: -3px 0 3px rgba(0, 0, 0, 0.04);
+  -webkit-transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+  -moz-transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+  transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.qodef-side-menu .qodef-close-side-menu-holder {
+  position: absolute;
+  top: 36px;
+  right: 36px;
+  z-index: 1000;
+}
+
+.admin-bar .qodef-side-menu .qodef-close-side-menu-holder {
+  top: 68px;
+}
+
+.qodef-header-centered .qodef-side-menu .qodef-close-side-menu-holder {
+  top: 15px;
+  right: 20px;
+}
+
+.qodef-side-menu a.qodef-close-side-menu {
+  display: block;
+  color: #3c3c3c;
+  font-size: 35px;
+  z-index: 1000;
+}
+
+.qodef-side-menu a.qodef-close-side-menu:hover {
+  color: #ffbea5;
+}
+
+.qodef-side-menu a.qodef-close-side-menu span {
+  display: block;
+  line-height: inherit;
+}
+
+.qodef-side-menu a.qodef-close-side-menu span:before {
+  display: block;
+  line-height: inherit;
+}
+
+.qodef-side-menu-slide-from-right.qodef-right-side-menu-opened .qodef-wrapper .qodef-cover {
+  z-index: 3000;
+}
+
+.qodef-side-menu-slide-from-right.qodef-right-side-menu-opened .qodef-side-menu {
+  right: 0;
+  visibility: visible;
+}
+
+.qodef-side-menu-slide-from-right .qodef-wrapper .qodef-cover {
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  opacity: 0;
+}
+
+/* ==========================================================================
+# Side area style - end
+========================================================================== */
+/* ==========================================================================
+   Side area styles - end
+   ========================================================================== */
+
+/*# sourceMappingURL=sidearea-map.css.map */

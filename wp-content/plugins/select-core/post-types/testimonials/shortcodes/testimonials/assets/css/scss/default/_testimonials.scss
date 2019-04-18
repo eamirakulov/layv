@@ -1,0 +1,32 @@
+/* ==========================================================================
+   Testimonials shortcode style - begin
+   ========================================================================== */
+
+.qodef-testimonials-holder {
+    @include qodefRelativeHolderLayout();
+    
+    .qodef-testimonials,
+    .qodef-testimonial-content,
+    .qodef-testimonial-text-holder {
+        @include qodefRelativeHolderLayout();
+    }
+
+    .qodef-testimonials {
+        padding: 0 50px;
+        box-sizing: border-box;
+        @include phone-portrait {
+            padding: 0 5px;
+        }
+    }
+
+    .qodef-testimonial-image {
+
+        img {
+            width: auto !important;
+            border-radius: 5em;
+        }
+    }
+}
+/* ==========================================================================
+   Testimonials shortcode style - end
+   ========================================================================== */

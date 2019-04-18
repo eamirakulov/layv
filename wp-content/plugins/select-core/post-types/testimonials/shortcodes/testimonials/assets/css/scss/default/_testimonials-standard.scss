@@ -1,0 +1,89 @@
+/* ==========================================================================
+   Testimonials standard style - begin
+   ========================================================================== */
+
+.qodef-testimonials-holder {
+    
+    &.qodef-testimonials-standard {
+        text-align: center;
+
+        .qodef-testimonial-text-holder{
+            padding: 66px 0 38px;
+            box-sizing: border-box;
+        }
+
+        .qodef-testimonial-image {
+            @include qodefRelativeHolderLayout();
+            margin: 10px 0;
+
+            img {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+
+        .qodef-testimonial-title {
+            margin: 0;
+        }
+
+        .qodef-testimonial-icon{
+            font-size: 60px;
+            color: $default-heading-color;
+        }
+
+        .qodef-testimonial-author {
+            margin: 29px 0 0;
+        }
+
+        .qodef-testimonial-text {
+            margin: 7px 0 0;
+        }
+
+        .owl-dots{
+            margin: 21px 0 0;
+
+            .owl-dot{
+                &:hover,
+                &.active {
+                    span{
+                        background-color: #3c3c3c;
+                    }
+                }
+                span{
+                    background-color: #cbcbcd;
+                }
+            }
+        }
+
+        /* Light/Dark styles */
+        &.qodef-testimonials-light {
+            
+            .qodef-testimonial-title,
+            .qodef-testimonial-text,
+            .qodef-testimonial-author,
+            .qodef-testimonial-icon,
+            .qodef-testimonials-author-job{
+                color: #fff;
+            }
+
+            .owl-dots {
+                
+                .owl-dot {
+
+                    &:hover,
+                    &.active {
+                        span{
+                            background-color: #fff;
+                        }
+                    }
+                    span{
+                        background-color: rgba(#fff, .5);
+                    }
+                }
+            }
+        }
+    }
+}
+/* ==========================================================================
+   Testimonials standard style - end
+   ========================================================================== */

@@ -1,0 +1,35 @@
+2019-04-18T10:28:17+00:00 CRITICAL Uncaught Error: Call to undefined function wc_print_notices() in /Users/emil/projects/layv/wp-content/plugins/woocommerce-one-page-checkout/woocommerce-one-page-checkout.php:1634
+Stack trace:
+#0 /Users/emil/projects/layv/wp-includes/class-wp-hook.php(286): PP_One_Page_Checkout::maybe_display_notices('[woocommerce_on...')
+#1 /Users/emil/projects/layv/wp-includes/plugin.php(208): WP_Hook->apply_filters('[woocommerce_on...', Array)
+#2 /Users/emil/projects/layv/wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php(1532): apply_filters('the_content', '[woocommerce_on...')
+#3 /Users/emil/projects/layv/wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php(473): WP_REST_Posts_Controller->prepare_item_for_response(Object(WP_Post), Object(WP_REST_Request))
+#4 /Users/emil/projects/layv/wp-includes/rest-api/class-wp-rest-server.php(946): WP_REST_Posts_Controller->get_item(Object(WP_REST_Request))
+#5 /Users/emil/projects/layv/wp-includes/rest-api/class-wp-rest-server.php(329): WP_REST_Server->dispa in /Users/emil/projects/layv/wp-content/plugins/woocommerce-one-page-checkout/woocommerce-one-page-checkout.php on line 1634
+
+2019-04-18T10:28:47+00:00 CRITICAL Uncaught Error: Call to undefined function wc_print_notices() in /Users/emil/projects/layv/wp-content/plugins/woocommerce-one-page-checkout/woocommerce-one-page-checkout.php:1634
+Stack trace:
+#0 /Users/emil/projects/layv/wp-includes/class-wp-hook.php(286): PP_One_Page_Checkout::maybe_display_notices('[woocommerce_on...')
+#1 /Users/emil/projects/layv/wp-includes/plugin.php(208): WP_Hook->apply_filters('[woocommerce_on...', Array)
+#2 /Users/emil/projects/layv/wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php(1532): apply_filters('the_content', '[woocommerce_on...')
+#3 /Users/emil/projects/layv/wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php(473): WP_REST_Posts_Controller->prepare_item_for_response(Object(WP_Post), Object(WP_REST_Request))
+#4 /Users/emil/projects/layv/wp-includes/rest-api/class-wp-rest-server.php(946): WP_REST_Posts_Controller->get_item(Object(WP_REST_Request))
+#5 /Users/emil/projects/layv/wp-includes/rest-api/class-wp-rest-server.php(329): WP_REST_Server->dispa in /Users/emil/projects/layv/wp-content/plugins/woocommerce-one-page-checkout/woocommerce-one-page-checkout.php on line 1634
+
+2019-04-18T10:29:18+00:00 CRITICAL Uncaught Error: Call to undefined function wc_print_notices() in /Users/emil/projects/layv/wp-content/plugins/woocommerce-one-page-checkout/woocommerce-one-page-checkout.php:1634
+Stack trace:
+#0 /Users/emil/projects/layv/wp-includes/class-wp-hook.php(286): PP_One_Page_Checkout::maybe_display_notices('[woocommerce_on...')
+#1 /Users/emil/projects/layv/wp-includes/plugin.php(208): WP_Hook->apply_filters('[woocommerce_on...', Array)
+#2 /Users/emil/projects/layv/wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php(1532): apply_filters('the_content', '[woocommerce_on...')
+#3 /Users/emil/projects/layv/wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php(473): WP_REST_Posts_Controller->prepare_item_for_response(Object(WP_Post), Object(WP_REST_Request))
+#4 /Users/emil/projects/layv/wp-includes/rest-api/class-wp-rest-server.php(946): WP_REST_Posts_Controller->get_item(Object(WP_REST_Request))
+#5 /Users/emil/projects/layv/wp-includes/rest-api/class-wp-rest-server.php(329): WP_REST_Server->dispa in /Users/emil/projects/layv/wp-content/plugins/woocommerce-one-page-checkout/woocommerce-one-page-checkout.php on line 1634
+
+2019-04-18T10:54:25+00:00 CRITICAL syntax error, unexpected '?' in /Users/emil/projects/layv/wp-content/themes/succulents/woocommerce/single-product/add-to-cart/simple.php on line 53
+
+2019-04-18T10:54:33+00:00 CRITICAL syntax error, unexpected '?' in /Users/emil/projects/layv/wp-content/themes/succulents/woocommerce/single-product/add-to-cart/simple.php on line 53
+
+2019-04-18T13:22:50+00:00 CRITICAL syntax error, unexpected 'endwhile' (T_ENDWHILE) in /Users/emil/projects/layv/wp-content/themes/succulents/framework/modules/blog/templates/lists/standard/list.php on line 7
+
+2019-04-18T13:22:54+00:00 CRITICAL syntax error, unexpected 'endwhile' (T_ENDWHILE) in /Users/emil/projects/layv/wp-content/themes/succulents/framework/modules/blog/templates/lists/standard/list.php on line 7
+

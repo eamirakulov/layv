@@ -1,0 +1,53 @@
+/* ==========================================================================
+   Counter shortcode style - begin
+   ========================================================================== */
+
+.qodef-counter-holder {
+    @include qodefRelativeHolderLayout();
+    opacity: 0;
+    @include qodefTransition(opacity 0.2s ease-in);
+	
+	.qodef-counter-inner {
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	.qodef-counter-symbol-holder {
+		text-align: center;
+		display: inline-block;
+	}
+
+    .qodef-counter {
+	    height: 1em;
+	    display: inline-block !important;
+	    vertical-align: middle;
+	    color: $default-heading-color;
+		font-family: $default-heading-font;
+	    font-size: 60px;
+	    line-height: 1em;
+	    font-weight: 700;
+	    overflow: hidden;
+		float: left;
+    }
+
+	.qodef-counter-symbol {
+		font-family: $default-heading-font;
+		font-size: 60px;
+		line-height: 1em;
+		font-weight: 700;
+		display: inline-block;
+		color: $default-heading-color;
+	}
+
+    .qodef-counter-title {
+	    margin: 12px 0 0;
+    }
+
+    .qodef-counter-text {
+	    margin: 14px 0 0;
+    }
+}
+/* ==========================================================================
+   Counter shortcode style - end
+   ========================================================================== */

@@ -1,0 +1,134 @@
+/* ==========================================================================
+   Video Button shortcode start styles
+   ========================================================================== */
+
+.qodef-video-button-holder {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	
+	&.qodef-vb-has-img {
+		
+		.qodef-video-button-play{
+			z-index: 1;
+			@include qodefAbsoluteHolderLayout();
+			
+			.qodef-video-button-play-image {
+				position: relative;
+				top: 50%;
+				left: 0;
+				display: block;
+				text-align: center;
+				@include qodefTransform(translate3d(0,-50%,0));
+			}
+
+			.qodef-video-button-play-inner {
+				box-shadow:0 0 0 0 #fff;
+				@include qodefTransition(all .4s cubic-bezier(0.48, 0.19, 0.2, 0.86));
+			}
+
+			&:hover {
+				.qodef-video-button-play-inner {
+					box-shadow:0 0 0 4px #fff;
+				}
+			}
+		}
+
+        .qodef-video-button-play-inner {
+            position: relative;
+            top: 50%;
+            left: 50%;
+            display: inline-block;
+            text-align: center;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: #fff;
+            @include qodefTransitionTransform(.4s cubic-bezier(0.48, 0.19, 0.2, 0.86));
+            @include qodefTransform(translate3d(-50%,-50%,0));
+        }
+    }
+	
+	.qodef-video-button-image {
+		@include qodefRelativeHolderLayout();
+		
+		img {
+			display: block;
+		}
+	}
+	
+	.qodef-video-button-play,
+	.qodef-video-button-play-image {
+		position: relative;
+		display: inline-block;
+		vertical-align: top;
+		z-index: 1;
+	}
+	
+	.qodef-video-button-play {
+		color: $first-main-color;
+		font-size: 40px;
+		line-height: 1;
+		
+		span {
+			display: block;
+			line-height: inherit;
+            position: absolute;
+            top:50%;
+            left:50%;
+            @include qodefTransform(translate3d(-38%,-50%,0));
+			
+			&:before {
+				display: block;
+				line-height: inherit;
+			}
+		}
+
+	}
+	
+	.qodef-video-button-play-image {
+		
+		&.qodef-vb-has-hover-image {
+			
+			&:hover {
+				
+				img {
+					
+					&:first-child {
+						opacity: 0;
+					}
+					
+					&:nth-child(2) {
+						opacity: 1;
+					}
+				}
+			}
+		}
+		
+		img {
+			display: block;
+			margin: 0 auto;
+			@include qodefTransition(opacity .3s ease-in-out);
+			
+			&:first-child {
+				position: relative;
+				opacity: 1;
+			}
+			
+			&:nth-child(2) {
+				position: absolute;
+				top: 0;
+				left: 50%;
+				opacity: 0;
+				@include qodefTransform(translate3d(-50%,0,0));
+				
+				.rev_slider_wrapper & {
+					@include qodefTransform(translate3d(0,0,0));
+				}
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Video Button shortcode end styles
+   ========================================================================== */

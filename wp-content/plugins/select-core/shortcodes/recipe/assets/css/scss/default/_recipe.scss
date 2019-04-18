@@ -1,0 +1,124 @@
+.qodef-recipe{
+    display: block;
+    width: 100%;
+    border: 1px solid #f1f1f1;
+
+    .qodef-recipe-basic-info,
+    .qodef-main-info,
+    .qodef-recipe-notes{
+        display: table;
+        width: 100%;
+        padding: 40px 50px;
+        box-sizing: border-box;
+        border-bottom: 1px solid #f1f1f1;
+    }
+
+    .qodef-recipe-basic-info{
+        .qodef-recipe-name{
+            margin: 28px 0;
+        }
+        h5{
+            margin: 9px 0;
+            .qodef-recipe-info-value{
+                font-family: $default-text-font;
+                font-size: 16px;
+                line-height: 25px;
+                font-weight: 400;
+                color: $default-text-color;
+                padding-left: 7px;
+            }
+        }
+    }
+
+    .qodef-main-info{
+        h4{
+            margin: 0 0 33px;
+        }
+
+        .qodef-ingredients{
+            .qodef-ingredient{
+                margin-bottom: 31px;
+                .qodef-ingredient-title{
+                    margin: 20px 0 0;
+                }
+                ul{
+                    margin: 11px 0;
+                    li{
+                        margin: 7px 0;
+                    }
+                }
+            }
+        }
+
+        .qodef-instructions{
+            .qodef-instruction{
+                margin: 0 0 13px;
+            }
+        }
+    }
+
+    > div{
+        &:last-child{
+            border-bottom: none;
+        }
+    }
+
+    .qodef-recipe-basic-text,
+    .qodef-recipe-image{
+        @include qodefTableCellLayout();
+        width: 50%;
+    }
+
+    .qodef-instructions,
+    .qodef-ingredients{
+        display: table-cell;
+        vertical-align: top;
+        width: 50%;
+    }
+
+    .qodef-ingredients{
+        .qodef-ingredient{
+            ul{
+                list-style: none;
+                li{
+                    &:before{
+                        content: '';
+                        width:6px;
+                        height: 6px;
+                        background-color: $first-main-color;
+                        position: relative;
+                        bottom: 2px;
+                        display: inline-block;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+    }
+
+    .qodef-instructions{
+        .qodef-instruction{
+            .qodef-instruction-numeration{
+                font-family: $default-heading-font;
+                font-weight: 700;
+                color: $first-main-color;
+            }
+        }
+
+        .qodef-print-button{
+            margin-top: 10px;
+            @media print {
+                display: none;
+            }
+        }
+    }
+
+
+    .qodef-recipe-image{
+        text-align: center;
+
+        img{
+            display: block;
+        }
+    }
+}
